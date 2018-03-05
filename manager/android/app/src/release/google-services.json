@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "127904483578",
+    "firebase_url": "https://manager-cb37f.firebaseio.com",
+    "project_id": "manager-cb37f",
+    "storage_bucket": "manager-cb37f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127904483578:android:e0e01c746c7775b5",
+        "android_client_info": {
+          "package_name": "com.manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127904483578-n9som35320em9r0l9341rurrg6neeibi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW93IqPgrM1gp_6xtrLJWAx5DBVNEI4EE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

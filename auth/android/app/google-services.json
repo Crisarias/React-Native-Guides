@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "395076407017",
+    "firebase_url": "https://authentication-893cb.firebaseio.com",
+    "project_id": "authentication-893cb",
+    "storage_bucket": "authentication-893cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395076407017:android:8e66c65605ee0e73",
+        "android_client_info": {
+          "package_name": "com.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395076407017-6lfujmure2f7jcerv4s1nbhjdgp3kv0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu5GzhLmw4F2j5HOAgj4YI7-x1JhqLeN0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

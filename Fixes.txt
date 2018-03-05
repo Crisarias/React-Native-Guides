@@ -1,0 +1,77 @@
+Despues del Init
+
+Android:
+
+-Abrir en Android Studio proyecto Android
+-instalar dependencias faltantes y sincronizar hasta que hayan errores
+-No actualizar gradle!!
+-Compilar
+-react-native run-android
+
+Fix unable to load script from assets index.android.bundle:
+
+1.(in project directory) mkdir android/app/src/main/assets
+2.react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+3.react-native run-android
+
+You can automate the above steps by placing them in scripts part of package.json like this:
+
+"android-linux": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android"
+
+
+Reload:
+
+adb shell input text "RR"
+
+Abrir Dev Menu:
+
+adb shell input keyevent 82
+
+ESLint Atom:
+
+Install linter-eslint in ATOM
+npm install --save-dev eslint-config-rallycoding
+Create .eslintrc in root
+add
+{
+  "extends":"rallycoding"
+}
+
+react-native-firebase Android issues
+
+Follow instruction installation and for the specific module on https://rnfirebase.io/docs/v3.2.x/getting-started docs sections
+
+* Poner el google-services.json en
+app
+app/src/debug
+app/src/realese
+
+For more issues with react-native-firebase
+-delete folder on android/app/build/googleServices/debug
+In Android Studio run the following command on  the terminal gradlew cleanBuildCache
+Also close Android Studio
+-Cannot send empty email or password, must be validate in the app.
+
+For Android Animations include in App.js
+
+import { UIManager, Platform } from 'react-native';
+
+constructor() {
+   super();
+   if (Platform.OS === 'android') {
+       UIManager.setLayoutAnimationEnabledExperimental &&
+       UIManager.setLayoutAnimationEnabledExperimental(true);
+   }
+ }
+
+-For validations use
+
+npm install --save validator
+info https://www.npmjs.com/package/validator
+
+Navigation
+
+npm install --save react-native-router-flux
+
+
+
